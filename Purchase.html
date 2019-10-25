@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Purchase</title>
-</head>
-<body>
-    <form>    <!-- get information to determine months till able to purchase -->
-        Item Name:<br>
-        <input type="text" name="itemname"><br>
-        Item Price:<br>
-        <input type="number" name="itemprice"><br>
-        Saving Rate Per Month:<br>
-        <input type="number" name="srpm"><br>
-        <input type="submit" value="Submit">
-    </form>
-    <div>    <!--return # of months until purchase -->
-        
-    </div>
+    <head>
+        <title>Purchase</title>
+    </head>
+    <body>
 
-</body>
+        <form>    <!-- get information to determine months till able to purchase -->
+            Item Name:<br>
+            <input type="text" id="itemname"><br>
+            Item Price:<br>
+            <input type="text" id="itemprice"><br>
+            Saving Rate Per Month:<br>
+            <input type="text" id="srpm"><br>
+            <button type="button" onclick="calc()">Enter</button>
+        </form>
+
+        <div id="result"></div>    <!--return # of months until purchase -->
+
+    </body>
+    <script src="Main.js"></script>
 </html>
