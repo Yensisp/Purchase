@@ -4,11 +4,11 @@ function calc() {
     var c = parseInt(document.querySelector("#srpm").value);
     var calculate;
 
-    if (b <= 0) {
-        calculate = window.alert("The price of the item is not available");
+    if (b <= 0 || undefined) {
+        calculate = "No item price available";
     }
-    else if (c <= 0) {
-        calculate = window.alert("The monthly savings rate is not available");
+    else if (c <= 0 || undefined) {
+        calculate = "No savings rate per month available";
     }
     else if (b > 0 && c > 0) {
         calculate = b/c;
