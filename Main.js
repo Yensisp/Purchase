@@ -14,5 +14,5 @@ function calc() {
         calculate = b/c;
     }
 
-    document.querySelector("#result").innerHTML = calculate;
+    document.querySelector("#result").innerHTML = String(calculate) + " months!";
 }
